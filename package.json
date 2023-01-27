@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/svelte": "^2.0.0",
     "@astrojs/tailwind": "^3.0.0",
+    "@fontsource/sofia-sans-condensed": "^4.5.1",
     "@netlify/functions": "^1.4.0",
     "astro": "^2.0.1",
     "node-fetch": "^3.3.0",
