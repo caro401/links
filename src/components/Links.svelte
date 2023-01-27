@@ -24,12 +24,14 @@
 
 <style lang="postcss">
   p {
-    @apply block border-violet-600 border-2 rounded-md p-2 text-lg focus:bg-white hover:bg-white;
+    @apply  shadow-md p-2 transition-all text-xl duration-500 border-4 border-violet-800 rounded-md bg-slate-100;
+    @apply  hover:transition-all hover:bg-slate-50 focus:bg-slate-50 hover:shadow-xl focus:shadow-xl;
   }
+  
   :global(.stats) {
-    @apply text-sm text-violet-400 block;
+    @apply text-sm text-violet-800 block;
   }
   nav {
-    @apply flex flex-col gap-4 max-w-md w-96 mx-auto;
+    @apply flex flex-col gap-4 max-w-prose w-96 mx-auto text-slate-800;
   }
 </style>
