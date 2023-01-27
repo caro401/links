@@ -1,3 +1,6 @@
 [[edge_functions]]
   path = "/"
   function = "add-stats"
+
+[dev]
+framework = "astro"

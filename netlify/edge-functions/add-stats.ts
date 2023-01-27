@@ -11,26 +11,21 @@ function kFormatter(num: number) {
 export default async (request: Request, context: Context) => {
     const response = await context.next()
 
-    const apiUrl = new URL(
-        Deno.env.get('URL') || 'http://localhost:8888',
-      );
-      apiUrl.pathname = '/.netlify/functions/get-masto-account';
-      const stats = await fetch(apiUrl.toString());
-      const masto_data = await stats.json();
+    const apiUrl = new URL(request.url);
+    apiUrl.pathname = '/.netlify/functions/get-masto-account';
+    const stats = await fetch(apiUrl.toString());
+    const masto_data = await stats.json();
 
-      const formatted = kFormatter(masto_data.followers)
-      return new HTMLRewriter()
+    const formatted = kFormatter(masto_data.followers)
+    return new HTMLRewriter()
         .on('[data-site="masto"]', {
-          element(element: Element) {
-            element.append(
-              `
-              <span class="stats">${formatted} followers</span>
-            `,
-              {
+            element(element: Element) {
+            element.append(`<span class="stats">${formatted} followers</span>`,
+                {
                 html: true,
-              },
+                },
             );
-          },
+            },
         })
         .transform(response);
 }
