@@ -1,5 +1,7 @@
 # Welcome to [Astro](https://astro.build)
 
+From [learn with jason](https://www.youtube.com/watch?v=19Sx7YeYyFo)
+
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
 
