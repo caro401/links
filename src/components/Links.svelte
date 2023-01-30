@@ -73,7 +73,7 @@
     @apply hover:transition-all hover:bg-slate-50 dark:hover:bg-slate-700 dark:focus:bg-slate-700 focus:bg-slate-50 hover:shadow-xl focus:shadow-xl;
   }
   h2 {
-    @apply text-lg font-semibold text-violet-800 dark:text-violet-200;
+    @apply text-lg font-semibold text-violet-800 dark:text-violet-300;
   }
   p {
     @apply text-base text-gray-700 dark:text-gray-300;
@@ -81,7 +81,7 @@
 
   :global(.stats) {
     @apply block text-sm;
-    @apply dark:text-violet-200 text-violet-800;
+    @apply dark:text-violet-300 text-violet-800;
   }
   nav {
     @apply flex flex-col gap-4 w-fit mx-auto text-slate-800;
