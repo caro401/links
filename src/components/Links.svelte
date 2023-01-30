@@ -32,35 +32,66 @@
       slug: "github",
     },
     {
-      interest: "Folk music and dancing in southeast England",
-      url: "https://flyingcat.dance",
-      label: "Book my band to play for your dance",
-      slug: "band",
-    },
-    {
-      interest: "Textile arts and sustainability",
+      interest: "Sustainably sources yarn, fibres and textile arts",
       url: "https://sheepsgreencrafts.co.uk",
       slug: "sheepsgreen",
       label: "Buy my handmade pieces and supplies",
     },
     {
+      interest: "Sustainability in textile production and fashion",
+      url: "#",
+      slug: "sheepsgreen-blog",
+      label: "Read my longform writing about sustainable textiles (coming soon!)",
+    },
+    {
       interest: "Productivity, getting through tasks",
       url: "https://herdingcats.work",
-      label: "Try my app Herding Cats",
+      label: "Try my app Herding Cats to gather all your tasks into one place",
       slug: "herding-cats",
     },
     {
       interest: "Staying on top of my household chores",
       url: "https://www.flowhousework.com",
-      label: "Try my app Flow Housework",
+      label: "Try my app Flow Housework to share out and track housework in a shared household",
       slug: "flow",
+    },
+    {
+      interest: "Tracking what books I own",
+      url: "https://shelf-cat.com",
+      label: "Try my app ShelfCat to manage your library and reading lists",
+      slug: "shelfcat",
+    },
+    {
+      interest: "Help with software development for Digital Humanities projects",
+      url: "https://codexfelis.dev",
+      label: "Contact Codex Felis to discuss how we can help",
+      slug: "codexfelis",
+    },
+    {
+      interest: "Organising folk music and dancing in southeast England",
+      url: "https://flyingcat.dance",
+      label: "Book my band to play for your dance",
+      slug: "band",
+    },
+
+    {
+      interest: "Dancing Contra in Cambridge",
+      url: "https://contrabridge.org",
+      label: "Come to the contra dance series I help organise",
+      slug: "contrabridge",
+    },
+    {
+      interest: "Help with creating a website for my band or dance event",
+      url: "mailto:hi@caro.fyi",
+      label: "Get in touch with Caro to discuss your needs",
+      slug: "mail",
     },
   ];
 </script>
 
 <nav>
   {#each LINKS as link}
-    <a data-site={link.slug} href={link.url}>
+    <a data-site={link.slug} href={link.url} rel="me">
       <h2>{link.interest}</h2>
       <p>{link.label}</p>
     </a>
