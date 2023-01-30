@@ -1,52 +1,5 @@
-# Welcome to [Astro](https://astro.build)
+# Links page with dynamic statistics
 
-From [learn with jason](https://www.youtube.com/watch?v=19Sx7YeYyFo)
+This project is inspired by [this episode of Learn with Jason](https://www.youtube.com/watch?v=19Sx7YeYyFo), in which they build a Linktree-like page, but pulling in regularly updated numbers of Twitch subscribers for a bit of social proof. I don't use Twitch, so I've instead added my follower count on Mastodon, number of public Github repositories, and the count of blog posts on my personal site. The resulting page is completely static HTML, as the data collection and injecting is done in Netlify functions.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This is my first experience with [Astro](https://astro.build/), [Netlify Functions](https://docs.netlify.com/functions/overview/) and [Netlify Edge Functions](https://docs.netlify.com/edge-functions/overview), so while you are free to use any of this code, don't treat me as an expert. And if you have any feedback or suggestions for improvements, please raise an issue to let me know.
