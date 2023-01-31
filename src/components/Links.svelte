@@ -32,7 +32,7 @@
       slug: "github",
     },
     {
-      interest: "Sustainably sources yarn, fibres and textile arts",
+      interest: "Sustainably sourced yarn, fibres and textile arts",
       url: "https://sheepsgreencrafts.co.uk",
       slug: "sheepsgreen",
       label: "Buy my handmade pieces and supplies",
