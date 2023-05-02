@@ -5,7 +5,7 @@ import Parser from "rss-parser";
 let parser = new Parser();
 
 async function getBlogData() {
-  const blogFeed = await parser.parseURL("https://www.caro.fyi/rss/feed.xml");
+  const blogFeed = await parser.parseURL("https://www.caro.fyi/rss.xml");
   return { postCount: blogFeed?.items.length || 0 };
 }
 
