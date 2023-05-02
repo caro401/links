@@ -85,6 +85,12 @@
       label: "Get in touch with Caro and James to discuss your needs",
       slug: "mail",
     },
+    {
+      interest: "Quick knitting calculations",
+      url: "https://knitsum.caro.fyi",
+      label: "Use my online knitting calculator",
+      slug: "knitsum",
+    },
   ];
 </script>
 
@@ -115,6 +121,6 @@
   }
   nav {
     @apply flex flex-col gap-4 w-fit mx-auto text-slate-800;
-    @apply md:grid md:grid-cols-2 md:w-auto;
+    @apply md:grid md:grid-cols-2 md:w-auto lg:grid-cols-3;
   }
 </style>
