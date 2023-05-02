@@ -9,6 +9,12 @@ async function getBlogData() {
   return { postCount: blogFeed?.items.length || 0 };
 }
 
+async function getNotesData() {
+  const notesFeed = await parser.parseURL("https://notes.caro.fyi/rss.xml");
+  return { notesCount: notesFeed?.items.length || 0 };
+}
+
+
 async function getMastodonData() {
   const mastodonAccount =
     "https://fosstodon.org/api/v1/accounts/109365798296089021";
@@ -33,7 +39,7 @@ async function getData() {
   const blog = await getBlogData();
   const mastodon = await getMastodonData();
   const github = await getGithubData();
-
+  const notes = await getNotesData()
   try {
     return {
       statusCode: 200,
@@ -41,6 +47,7 @@ async function getData() {
         mastodon,
         github,
         blog,
+        notes,
       }),
       ttl: 604800, // cache the result of this function for 1 week
     };

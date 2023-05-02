@@ -35,6 +35,16 @@ export default async (request: Request, context: Context) => {
         );
       },
     })
+    .on('[data-site="notes"', {
+      element(element: Element) {
+        element.append(
+          `<span class="stats">${data.notes.notesCount} notes</span>`,
+          {
+            html: true,
+          }
+        );
+      },
+    })
     .on('[data-site="github"', {
       element(element: Element) {
         element.append(
