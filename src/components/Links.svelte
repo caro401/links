@@ -73,7 +73,6 @@
       label: "Book my band to play for your dance",
       slug: "band",
     },
-
     {
       interest: "Dancing Contra in Cambridge",
       url: "https://contrabridge.org",
@@ -82,8 +81,8 @@
     },
     {
       interest: "Help with creating a website for my band or dance event",
-      url: "mailto:hi@caro.fyi",
-      label: "Get in touch with Caro to discuss your needs",
+      url: "https://flyingcat.dance/services",
+      label: "Get in touch with Caro and James to discuss your needs",
       slug: "mail",
     },
   ];
